@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/css/shop.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+  </head>
+  <body>
+    <%- include('../include/navigation.ejs') %>
+    <main>
+      <% if(products.length>0) { %>
+      <ul>
+        <% products.forEach(p=> { %>
+        <div class="deleting">
+          <%= p.productData.title %>(<%= p.qty %>)
+          <form action="/cart-delete-item" method="POST">
+            <button type="submit" class="btn">Delete</button>
+            <input
+              type="hidden"
+              value="<%= p.productData.id %>"
+              name="productID"
+            />
+          </form>
+        </div>
+        <% }) %>
+      </ul>
+      <% } else { %>
+      <h1>No product in the cart!</h1>
+      <% } %>
+    </main>
+  </body>
+</html>
