@@ -1,0 +1,24 @@
+{
+  "name": "shurukorsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "new.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon new.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-handlebars": "^8.0.1",
+    "mysql2": "^3.11.0",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.3"
+  }
+}

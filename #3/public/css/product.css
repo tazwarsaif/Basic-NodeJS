@@ -1,0 +1,128 @@
+* {
+  font-family: sans-serif;
+}
+.product-form {
+  width: 20rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+.product-item {
+  width: 20rem;
+  max-width: 95%;
+}
+
+.product__title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.product__price {
+  text-align: center;
+  color: #4d4d4d;
+  margin-bottom: 0.5rem;
+}
+
+.product__description {
+  text-align: center;
+}
+
+.grid {
+  border: 1px solid;
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 10px;
+  text-align: center;
+}
+.grid article {
+  border: 0.5px solid;
+  border-radius: 3px;
+  box-shadow: 1px 2px 2px black;
+  padding: 7px;
+}
+.grid img {
+  width: 100%;
+}
+.grid .btn {
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered img {
+  width: 35%;
+}
+
+.centered hr {
+  color: black;
+  border: 1px solid;
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+.centered .product__description {
+  font-size: 25px;
+}
+
+.centered .product__price {
+  font-size: 40px;
+}
+
+.centered .btn {
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.centered .btn:hover,
+.centered .btn:active {
+  background-color: rgb(143, 189, 243);
+}
+
+.grid .btn:hover,
+.grid .btn:active {
+  background-color: rgb(143, 189, 243);
+}
+
+.card__actions a {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 2px;
+  color: black;
+}
+
+.anker {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 2px;
+  color: black;
+  font-size: 25px;
+}
+
+.card__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.deleting .btn {
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
